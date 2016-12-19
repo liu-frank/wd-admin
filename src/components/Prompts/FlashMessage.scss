@@ -1,0 +1,53 @@
+.locator {
+  position: fixed;
+  top: 60px;
+  z-index: 1060;
+  width: 100%;
+
+  .flash-message {
+    position: relative;
+    width: 360px;
+    border: 1px solid #8dcdf3;
+    border-radius: 5px;
+    box-shadow: 0 0 6px #279fe5;
+    margin: 0 auto;
+    background: #FFFFFF;
+    font-size: 20px;
+    color: #279fe5;
+    line-height: 60px;
+    padding-left: 50px;
+    overflow: hidden;
+
+    &.fail {
+      color: #df4a32;
+      border: 1px solid #ffa293;
+      box-shadow: 0 0 6px #df4a32;
+    }
+
+    img {
+      position: absolute;
+      top: 20px;
+      left: 15px;
+    }
+  }
+}
+
+.old-flash-message {
+  position: absolute;
+  top: -5000px;
+  opacity: 0;
+  left: 20%;
+  width: 60%;
+  transition: all 0.5s;
+  z-index: 1060;
+}
+
+.old-flash-message-active {
+  position: fixed;
+  top: 30%;
+  opacity: 1;
+  left: 20%;
+  width: 60%;
+  transition: all 0.5s;
+  z-index: 1060;
+}

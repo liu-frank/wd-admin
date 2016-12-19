@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>万达客服运营平台</title>
+  <meta name="description" content="万达统一运营平台">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+  <div class="container">
+    <img class="logo-header" src="images/logo-header.png" />
+    <div class="login-box">
+      <div class="login-header">
+        <p>登录</p>
+        <img src="images/box-divider.png" />
+      </div>
+      <form action="/ams/login" method="post">
+        <input
+          name="id"
+          id="id-input"
+          type="text"
+          autofocus
+          required
+          placeholder="请输入万信号" />
+        <input
+          name="password"
+          id="password-input"
+          type="password"
+          required
+          placeholder="请输入密码" />
+        <p class='error-message'>
+          密码错误，请重新输入
+        </p>
+        <button class='submit-button'type='submit'>
+          立即登录
+        </button>
+      </form>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/login.js"></script>
+</body>
+
+</html>
